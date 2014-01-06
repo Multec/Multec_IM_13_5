@@ -5,7 +5,6 @@ import processing.core.PImage;
 
 public class NewsTile extends Shape {
 	
-	public PImage image;
 	
 	private float newsTile;
 
@@ -13,22 +12,14 @@ public class NewsTile extends Shape {
 	private float height;
 	private float depth;
 	
-	public NewsTile(float posX, float posY, float posZ, int fillColor, PImage image, float width, float height, float depth) {
+	public NewsTile(float posX, float posY, float posZ, int fillColor, float width, float height, float depth) {
 		super(posX, posY, posZ, fillColor);
-		this.image = image;
 		
 		this.width = width;
 		this.height = height;
 		this.depth = depth;
 	}
 	
-	public PImage getImage() {
-		return image;
-	}
-
-	public void setImage(PImage image) {
-		this.image = image;
-	}
 
 	public float getWidth() {
 		return width;
@@ -61,7 +52,7 @@ public class NewsTile extends Shape {
 		app.strokeWeight(strokeWeight);
 		
 		app.pushMatrix();
-		
+		app.box(width, height, depth);
 		app.popMatrix();
 		
 	}
