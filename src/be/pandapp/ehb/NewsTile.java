@@ -8,6 +8,8 @@ public class NewsTile extends Shape {
 	private float height;
 	private float depth;
 	
+	private PImage img;
+	
 	public NewsTile(float x, float y, float z, int fillColor, float width, float height, float depth) {
 		super(x, y, z, fillColor);
 		
@@ -48,8 +50,13 @@ public class NewsTile extends Shape {
 		app.strokeWeight(strokeWeight);
 		
 		app.pushMatrix();
+		PImage img = app.loadImage("images/Scientology_01.jpg");
+		app.beginShape();
+		app.texture(img);
+		app.rotateY(2);
 		app.translate(x, y, z);
 		app.box(width, height, depth);
+		app.endShape();
 		app.popMatrix();
 		
 	}
