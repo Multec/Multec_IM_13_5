@@ -15,20 +15,27 @@ public class MainPandapp extends PApplet {
 		PApplet.main(new String[] { "PandApp" });
 	}
 
-	/*
-	 * private NewsTile n1;
-	 * 
-	 * public void setup() { size(1280, 800, OPENGL); background(255); smooth();
-	 * n1 = new NewsTile(400, 400, 0, 100, 300, 100, 100);
-	 * 
-	 * }//end setup
-	 * 
-	 * public void draw() { lights(); n1.draw(this);
-	 * 
-	 * }//end draw
-	 */
+	
+	 private NewsTile n1;
+	 
+	 public void setup() { size(1280, 800, P3D); 
+	 background(255); 
+	 smooth();
+	 textureMode(NORMAL);
+	 n1 = new NewsTile(1024, 544, 0, 100, 256, 256, 256);
+	 
+	 }//end setup
+	 
+	 public void draw() { 
+		 lights();
+		 n1.draw(this);
+	 
+	 }//end draw
+	 
+	
 	// Slashtag Adrien - Ruben
-
+	
+	/*
 	private SlashTag st;
 	private PShape headAndFoot;
 	private PShape middle;
@@ -45,7 +52,7 @@ public class MainPandapp extends PApplet {
 		background(0);
 		smooth();
 
-		headAndFoot = loadShape("../image/SlashTagProcessingHeadFoot.svg");
+		headAndFoot = loadShape("../images/SlashTagProcessingHeadFoot.svg");
 		middle = loadShape("../images/SlashTagProcessingMiddle.svg");
 		text = loadShape("../images/SlashTagProcessingText.svg");
 		st = new SlashTag(400, 400, 0, 150, 100, 100, headAndFoot, middle, text);
@@ -97,5 +104,5 @@ public class MainPandapp extends PApplet {
 		mouseAfterClick = true;
 		lastMouseX = mouseX;
 	}
-
+*/
 } // end MainPandapp
