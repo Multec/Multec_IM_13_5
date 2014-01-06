@@ -2,7 +2,7 @@ package be.pandapp.ehb;
 
 import processing.core.PImage;
 
-public class NewsTile {
+public class NewsTile extends Shape {
 	
 	public int posX;
 	public int posY;
