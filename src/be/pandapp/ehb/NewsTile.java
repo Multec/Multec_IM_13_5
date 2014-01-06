@@ -1,5 +1,6 @@
 package be.pandapp.ehb;
 
+import processing.core.PApplet;
 import processing.core.PImage;
 
 public class NewsTile extends Shape {
@@ -10,9 +11,8 @@ public class NewsTile extends Shape {
 	public PImage image;
 	
 
-	public NewsTile(int posX, int posY, PImage image) {
-		this.posX = posX;
-		this.posY = posY;
+	public NewsTile(float posX, float posY, float posZ, int fillColor, PImage image) {
+		super(posX, posY, posZ, fillColor);
 		this.image = image;
 	}
 	
@@ -21,6 +21,12 @@ public class NewsTile extends Shape {
 	}
 
 	public void draw() {
+		
+	}
+
+	@Override
+	public void draw(PApplet app) {
+		// TODO Auto-generated method stub
 		
 	}
 }
