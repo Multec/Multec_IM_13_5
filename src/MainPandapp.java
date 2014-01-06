@@ -19,19 +19,17 @@ public class MainPandapp extends PApplet {
 	private NewsTile n1;
 	
 	public void setup() {
-		size(800, 800, OPENGL);
+		size(1280, 800, OPENGL);
 		background(255);
 		smooth();
-		n1 = new NewsTile(400, 400, 0, 255, 100, 100, 100);
+		n1 = new NewsTile(400, 400, 0, 100, 300, 100, 100);
 		
-	}
+	}//end setup
 	
 	public void draw() {
-
 		lights();
-		box(100, 100, 100);
 		n1.draw(this);
 		
-	}
+	}//end draw
 
-}
+} //end MainPandapp

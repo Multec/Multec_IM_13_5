@@ -1,19 +1,15 @@
 package be.pandapp.ehb;
 
-import processing.core.PApplet;
-import processing.core.PImage;
+import processing.core.*;
 
 public class NewsTile extends Shape {
 	
-	
-	private float newsTile;
-
 	private float width;
 	private float height;
 	private float depth;
 	
-	public NewsTile(float posX, float posY, float posZ, int fillColor, float width, float height, float depth) {
-		super(posX, posY, posZ, fillColor);
+	public NewsTile(float x, float y, float z, int fillColor, float width, float height, float depth) {
+		super(x, y, z, fillColor);
 		
 		this.width = width;
 		this.height = height;
@@ -52,8 +48,10 @@ public class NewsTile extends Shape {
 		app.strokeWeight(strokeWeight);
 		
 		app.pushMatrix();
+		app.translate(x, y, z);
 		app.box(width, height, depth);
 		app.popMatrix();
 		
 	}
+	
 }
