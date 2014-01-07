@@ -48,34 +48,79 @@ public class MainSlashTag extends PApplet {
 	public void draw() {
 		// shape(headAndFoot, 400, 400, 800, 800);
 		for (int i = 0; i < this.aantal; i++) {
-			if (slashtag[i] != null) {
-				if ((slashtag[i-1].getX() - slashtag[i].getX()) > 200 || slashtag[i].getX() - slashtag[i + 1].getX() < 200) {
-					slashtag[i] = new SlashTag(random(0, width - 200), random(
-							0, height - 200), 0, 255, 1, headAndFoot, middle,
-							text);
-					slashtag[i].draw(this);
-					System.out.println(slashtag[i].getX());
-				}
-			}
-			else {
-				slashtag[i] = new SlashTag(random(0, width - 200), random(
-						0, height - 200), 0, 255, 1, headAndFoot, middle,
+			
+			
+			if (i == 0) {
+				slashtag[i] = new SlashTag(random(0, 100),
+						random(0, 100), 0, 255, 1, headAndFoot, middle,
 						text);
+
 				slashtag[i].draw(this);
 			}
 
-			/*
-			 * slashtag[i] = new SlashTag(random(0, width - 200), random(0,
-			 * height - 200), 0, 255, 1, headAndFoot, middle, text);
-			 * slashtag[i].draw(this); System.out.println(slashtag[i].getX());
-			 * while(slashtag[i-1].getX() - slashtag[i].getX() == random(-200,
-			 * 200)) { slashtag[i] = 0; slashtag[i] = new SlashTag(random(0,
-			 * width - 200), random(0, height - 200), 0, 255, 1, headAndFoot,
-			 * middle, text); }
-			 */
-		}
+			if (i < 5 && i > 0) {
+				slashtag[i] = new SlashTag(random(slashtag[i - 1].getX() + 150,
+						slashtag[i - 1].getX() + 275), random(0, 100),
+						0, 255, 1, headAndFoot, middle, text);
+				slashtag[i].draw(this);
 
-		stop();
+				
+
+			}
+			
+			if (i == 5) {
+				slashtag[i] = new SlashTag(random(0, 100),
+						random(250, 350), 0, 255, 1, headAndFoot, middle,
+						text);
+
+				slashtag[i].draw(this);
+			}
+			
+			if (i < 10 && i > 5) {
+				
+				
+				slashtag[i] = new SlashTag(random(slashtag[i - 1].getX() + 150,
+						slashtag[i - 1].getX() + 275), random(250, 350),
+						0, 255, 1, headAndFoot, middle, text);
+				slashtag[i].draw(this);
+
+				System.out.println(slashtag[i].getX());
+
+			}
+			
+			if (i == 10) {
+				slashtag[i] = new SlashTag(random(0, 100),
+						random(500, 600), 0, 255, 1, headAndFoot, middle,
+						text);
+
+				slashtag[i].draw(this);
+			}
+			
+			
+			if (i <= 15 && i > 10) {
+				slashtag[i] = new SlashTag(random(slashtag[i - 1].getX() + 150,
+						slashtag[i - 1].getX() + 275), random(500, 600),
+						0, 255, 1, headAndFoot, middle, text);
+				slashtag[i].draw(this);
+
+				System.out.println(slashtag[i].getX());
+
+			}
+			
+			
+
+
+			/*else {
+				slashtag[i] = new SlashTag(random(slashtag[i - 1].getX(),
+						slashtag[i - 1].getX() + 300), random(
+						slashtag[i - 1].getY(), slashtag[i - 1].getY() + 300),
+						0, 255, 1, headAndFoot, middle, text);
+				slashtag[i].draw(this);
+
+				System.out.println(slashtag[i].getX());
+			}*/
+			stop();
+		}
 
 		/*
 		 * // positie vastzetten van middelstuk int mouseX2 = (int) (mouseX *
