@@ -10,20 +10,20 @@ import processing.core.PShape;
  * @author Pindamannetje
  *
  */
-public class SlashTag extends Shape {
+public class SlashTag extends DisplayObject {
 	
-	PApplet app;	
+	
 	PShape headAndFoot;
 	PShape middle;
 	PShape text;
 	float scale;
 	
 	
-	public SlashTag(float x, float y, float z, int fillColor, float scale) {
-		super(x, y, z, fillColor);
-		this.headAndFoot = this.app.loadShape("../images/SlashTagProcessingHeadFoot.svg");
-		this.middle = this.app.loadShape("../images/SlashTagProcessingMiddle.svg");
-		this.text = this.app.loadShape("../images/SlashTagProcessingText.svg");
+	public SlashTag(float x, float y, float z, int fillColor, float scale, PShape headAndFoot, PShape middle, PShape text) {
+		super(x, y, z);
+		this.headAndFoot = headAndFoot;
+		this.middle = middle;
+		this.text = text;
 		this.scale = scale;
 		
 	}
@@ -73,14 +73,16 @@ public class SlashTag extends Shape {
 
 	@Override
 	public void draw(PApplet app) {
-		app.fill(fillColor);
+		/*app.fill(fillColor);
 		app.stroke(strokeColor);
-		app.strokeWeight(strokeWeight);
+		app.strokeWeight(strokeWeight);*/
+		app.pushMatrix();
+		app.translate(x, y);
 		app.scale(scale);
 		app.shape(headAndFoot);
 		app.shape(middle);
 		app.shape(text);
-		
+		app.popMatrix();
 	}
 	
 	
