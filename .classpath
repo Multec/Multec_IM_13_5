@@ -18,5 +18,7 @@
 	<classpathentry kind="lib" path="/Applications/Processing.app/Contents/Resources/Java/core/library/jogl-all-natives-windows-i586.jar"/>
 	<classpathentry kind="lib" path="/Applications/Processing.app/Contents/Resources/Java/core/library/jogl-all.jar"/>
 	<classpathentry kind="lib" path="/Applications/Processing.app/Contents/Resources/Java/modes/java/libraries/video/library/video.jar"/>
+	<classpathentry kind="lib" path="/Applications/Processing.app/Contents/Resources/Java/modes/java/libraries/video/library/gstreamer-java.jar"/>
+	<classpathentry kind="lib" path="/Applications/Processing.app/Contents/Resources/Java/modes/java/libraries/video/library/jna.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
