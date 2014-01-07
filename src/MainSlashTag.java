@@ -20,9 +20,7 @@ public class MainSlashTag extends PApplet{
 		PApplet.main(new String[] { "PandApp" });
 	}
 	
-	private SlashTag st;
-	private PShape headAndFoot;
-	private PShape middle;
+	private SlashTag slashtag;
 	private PShape text;
 
 	// ---
@@ -35,20 +33,14 @@ public class MainSlashTag extends PApplet{
 		size(1280, 800);
 		background(0);
 		smooth();
-
-		headAndFoot = loadShape("../images/SlashTagProcessingHeadFoot.svg");
-		middle = loadShape("../images/SlashTagProcessingMiddle.svg");
-		text = loadShape("../images/SlashTagProcessingText.svg");
-		st = new SlashTag(400, 400, 0, 150, 100, 100, headAndFoot, middle, text);
+		slashtag = new SlashTag(10, 10, 0, 150, 100);
 		text.disableStyle();
-
-		// ---
 
 		outOfPlace = false;
 	}
 
 	public void draw() {
-		// positie vastzetten van middelstuk
+		/*// positie vastzetten van middelstuk
 		int mouseX2 = (int) (mouseX * 0.245);
 		int lastMouseX2 = (int) (lastMouseX * 0.245);
 		background(0);
@@ -81,12 +73,12 @@ public class MainSlashTag extends PApplet{
 
 		}
 		shape(text, 400, 400, 800, 800);
-
+*/
 	}
 
-	public void mouseReleased() {
-		mouseAfterClick = true;
+	//public void mouseReleased() {
+	/*	mouseAfterClick = true;
 		lastMouseX = mouseX;
-	}
+	}*/
 	
 }
