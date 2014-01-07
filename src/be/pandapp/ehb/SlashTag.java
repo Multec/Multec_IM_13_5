@@ -3,6 +3,8 @@
  */
 package be.pandapp.ehb;
 
+import com.apple.jobjc.JObjCRuntime.Width;
+
 import processing.core.PApplet;
 import processing.core.PShape;
 
@@ -94,8 +96,6 @@ public class SlashTag extends Shape {
 		app.fill(fillColor);
 		app.stroke(strokeColor);
 		app.strokeWeight(strokeWeight);
-		
-		
 	}
 	
 	
