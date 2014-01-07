@@ -3,8 +3,6 @@
  */
 package be.pandapp.ehb;
 
-import com.apple.jobjc.JObjCRuntime.Width;
-
 import processing.core.PApplet;
 import processing.core.PShape;
 
@@ -14,22 +12,49 @@ import processing.core.PShape;
  */
 public class SlashTag extends Shape {
 	
+	float width;
+	float height;
 	PShape headAndFoot;
 	PShape middle;
 	PShape text;
-	float scale;
 	
 	
-	public SlashTag(float x, float y, float z, int fillColor, float scale, PShape headAndFoot, PShape middle, PShape text) {
+	public SlashTag(float x, float y, float z, int fillColor, float width, float height, PShape headAndFoot, PShape middle, PShape text) {
 		super(x, y, z, fillColor);
 		this.headAndFoot = headAndFoot;
 		this.middle = middle;
 		this.text = text;
-		this.scale = scale;
+		this.width = width;
+		this.height = height;
 		
 	}
 	
 	
+
+	public float getWidth() {
+		return width;
+	}
+
+
+
+	public void setWidth(float width) {
+		this.width = width;
+	}
+
+
+
+	public float getHeight() {
+		return height;
+	}
+
+
+
+	public void setHeight(float height) {
+		this.height = height;
+	}
+
+
+
 	public PShape getMiddle() {
 		return middle;
 	}
@@ -64,22 +89,13 @@ public class SlashTag extends Shape {
 
 
 
-	public float getScale() {
-		return scale;
-	}
-
-
-	public void setScale(float scale) {
-		this.scale = scale;
-	}
-
-
 	@Override
 	public void draw(PApplet app) {
 		app.fill(fillColor);
 		app.stroke(strokeColor);
 		app.strokeWeight(strokeWeight);
-		app.scale(this.scale);
+		
+		
 	}
 	
 	
