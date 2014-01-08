@@ -23,9 +23,11 @@ public class MainPandapp extends PApplet {
 
 	private int offset = 0;
 	
+	
 	public int getOffset() {
 		return offset;
 	}
+	
 	 
 	 public void setup() {
 		 size(1280, 800);
@@ -51,11 +53,11 @@ public class MainPandapp extends PApplet {
 		}
 	 
 	 public void mouseClicked() {
+		 
 		   for (int i = 0; i < totalTiles; i++) {
 		      tile[i].mouseClicked();
 		  }
-		  
-		  
+		  		  
 		}
 	 
 	 public void mouseDragged() {
@@ -65,4 +67,4 @@ public class MainPandapp extends PApplet {
 	
 	
 
-} // end MainPandapp
+}

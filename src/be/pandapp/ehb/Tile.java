@@ -78,5 +78,6 @@ public class Tile {
 	  public int getEndY() {
 	    return this.endY + app.getOffset();
 	  }
+
 	  
 	}
