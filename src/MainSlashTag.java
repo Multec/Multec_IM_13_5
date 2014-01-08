@@ -1,4 +1,8 @@
 import be.pandapp.ehb.SlashTag;
+<<<<<<< HEAD
+=======
+import be.pandapp.ehb.Slashing;
+>>>>>>> 4ad46efc0b2496f6ae20f929e67b7a89f25b1411
 import be.pandapp.ehb.Slashing;
 import processing.core.PApplet;
 import processing.core.PShape;
@@ -23,6 +27,10 @@ public class MainSlashTag extends PApplet {
 	private PShape middle;
 	private PShape text;
 	
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4ad46efc0b2496f6ae20f929e67b7a89f25b1411
 	// ---
 	boolean mouseAfterClick;
 	boolean outOfPlace;
@@ -48,6 +56,10 @@ public class MainSlashTag extends PApplet {
 				Slashing[i] = new Slashing(random(0, 100),
 						random(0, 100), 0, 255, 1, headAndFoot, middle,
 						text);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4ad46efc0b2496f6ae20f929e67b7a89f25b1411
 				
 			}
 			if (i < 5 && i > 0) {
@@ -55,6 +67,10 @@ public class MainSlashTag extends PApplet {
 						Slashing[i - 1].getX() + 275), random(0, 100),
 						0, 255, 1, headAndFoot, middle, text);
 			
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4ad46efc0b2496f6ae20f929e67b7a89f25b1411
 				
 			}
 			
@@ -62,6 +78,10 @@ public class MainSlashTag extends PApplet {
 				Slashing[i] = new Slashing(random(0, 100),
 						random(250, 350), 0, 255, 1, headAndFoot, middle,
 						text);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4ad46efc0b2496f6ae20f929e67b7a89f25b1411
 				
 			}
 			
@@ -72,13 +92,23 @@ public class MainSlashTag extends PApplet {
 						Slashing[i - 1].getX() + 275), random(250, 350),
 						0, 255, 1, headAndFoot, middle, text);
 				
+<<<<<<< HEAD
 				//System.out.println(Slashing[i].getX());
+=======
+
+				System.out.println(Slashing[i].getX());
+
+>>>>>>> 4ad46efc0b2496f6ae20f929e67b7a89f25b1411
 			}
 			
 			if (i == 10) {
 				Slashing[i] = new Slashing(random(0, 100),
 						random(500, 600), 0, 255, 1, headAndFoot, middle,
 						text);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4ad46efc0b2496f6ae20f929e67b7a89f25b1411
 			
 			}
 			
@@ -88,7 +118,13 @@ public class MainSlashTag extends PApplet {
 						Slashing[i - 1].getX() + 275), random(500, 600),
 						0, 255, 1, headAndFoot, middle, text);
 				
+<<<<<<< HEAD
 				//System.out.println(Slashing[i].getX());
+=======
+
+				System.out.println(Slashing[i].getX());
+
+>>>>>>> 4ad46efc0b2496f6ae20f929e67b7a89f25b1411
 			}
 	
 			
