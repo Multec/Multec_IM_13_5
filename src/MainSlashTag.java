@@ -50,7 +50,7 @@ public class MainSlashTag extends PApplet {
 
 	public void draw() {
 		background(0);
-		
+		if(frameCount <= 1) {
 		if (Slashing.length >= 0){
 		for (int i = 0; i < this.aantal; i++) {
 			
@@ -89,7 +89,7 @@ public class MainSlashTag extends PApplet {
 						0, 255, 1, headAndFoot, middle, text);
 				
 
-				System.out.println(Slashing[i].getX());
+				//System.out.println(Slashing[i].getX());
 
 			}
 			
@@ -108,17 +108,21 @@ public class MainSlashTag extends PApplet {
 						0, 255, 1, headAndFoot, middle, text);
 				
 
-				System.out.println(Slashing[i].getX());
+				//System.out.println(Slashing[i].getX());
 
 			}
 	
 			
 		}
 		}
-		else {
-			//Slashing[1].draw(this);
-			stop();
-			System.out.println(Slashing[1]);
+		}
+		if (Slashing.length == 15) {
+			
+			//stop();
+			for (int i = 0; i < Slashing.length; i++) {
+				Slashing[i].draw(this);
+			}
+			System.out.println(Slashing[1].getX());
 		}
 		
 	}
