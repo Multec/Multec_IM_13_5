@@ -4,21 +4,15 @@ public class Slashing extends SlashTag {
 	boolean mouseAfterClick;
 	boolean outOfPlace;
 	int lastMouseX;
-<<<<<<< HEAD
-=======
 
 
->>>>>>> 4ad46efc0b2496f6ae20f929e67b7a89f25b1411
 	public Slashing(float x, float y, float z, int fillColor, float scale,
 			PShape headAndFoot, PShape middle, PShape text) {
 		super(x, y, z, fillColor, scale, headAndFoot, middle, text);
 		// TODO Auto-generated constructor stub
 	}
-<<<<<<< HEAD
-=======
 
->>>>>>> 4ad46efc0b2496f6ae20f929e67b7a89f25b1411
-	public void draw(PApplet app) {
+	 public void draw(PApplet app) {
 		
 		app.ellipse(app.mouseX, app.mouseY, 20, 20);
 		int mouseX2 = (int) (app.mouseX * 0.245);
@@ -27,35 +21,23 @@ public class Slashing extends SlashTag {
 		if (app.mouseX >= (x + 10) && app.mousePressed) {
 			System.out.println("test1");
 			outOfPlace = true;
-<<<<<<< HEAD
-			app.shape(middle, app.mouseX, (x + 92) - (mouseX2));
-		}
-=======
-
 			app.shape(middle, app.mouseX, (x + 92) - (mouseX2));
 		}
 
->>>>>>> 4ad46efc0b2496f6ae20f929e67b7a89f25b1411
 		else if (lastMouseX < (x + 20)) {
 			outOfPlace = false;
 			mouseAfterClick = false;
 			System.out.println("test2");
 		}
 		if (outOfPlace && mouseAfterClick && app.mousePressed == false) {
-<<<<<<< HEAD
-=======
 
->>>>>>> 4ad46efc0b2496f6ae20f929e67b7a89f25b1411
 			app.shape(middle, lastMouseX, (x + 92) - (lastMouseX2));
 			lastMouseX -= 15;
 			System.out.println("test3");
 		}
 		else if (outOfPlace == false) {
 			//System.out.println("test5");
-<<<<<<< HEAD
-=======
 
->>>>>>> 4ad46efc0b2496f6ae20f929e67b7a89f25b1411
 		}
 		app.pushMatrix();
 		app.translate(x, y);
@@ -64,16 +46,10 @@ public class Slashing extends SlashTag {
 		app.shape(middle);
 		app.shape(text);
 		app.popMatrix();
-<<<<<<< HEAD
 	}
-	public void mouseReleased(PApplet app) {
-=======
+	
+	public void mouseReleased1(PApplet app) {
 
-	}
-
-	public void mouseReleased(PApplet app) {
-
->>>>>>> 4ad46efc0b2496f6ae20f929e67b7a89f25b1411
 		mouseAfterClick = true;
 		lastMouseX = app.mouseX;
 		System.out.println("test6");
