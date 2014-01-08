@@ -4,8 +4,6 @@ import processing.core.PApplet;
 import processing.video.Movie;
 
 
-
-
 /**
  * @author
  * 

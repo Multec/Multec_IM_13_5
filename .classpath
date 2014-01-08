@@ -2,7 +2,6 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="lib" path="/Applications/Processing.app/Contents/Resources/Java/core/library/core.jar"/>
 	<classpathentry kind="lib" path="/Applications/Processing.app/Contents/Resources/Java/core/library/gluegen-rt-natives-linux-amd64.jar"/>
 	<classpathentry kind="lib" path="/Applications/Processing.app/Contents/Resources/Java/core/library/gluegen-rt-natives-linux-armv6hf.jar"/>
 	<classpathentry kind="lib" path="/Applications/Processing.app/Contents/Resources/Java/core/library/gluegen-rt-natives-linux-i586.jar"/>
@@ -20,5 +19,7 @@
 	<classpathentry kind="lib" path="/Applications/Processing.app/Contents/Resources/Java/modes/java/libraries/video/library/video.jar"/>
 	<classpathentry kind="lib" path="/Applications/Processing.app/Contents/Resources/Java/modes/java/libraries/video/library/gstreamer-java.jar"/>
 	<classpathentry kind="lib" path="/Applications/Processing.app/Contents/Resources/Java/modes/java/libraries/video/library/jna.jar"/>
+	<classpathentry kind="lib" path="lib/antlr.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/android-mode"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
